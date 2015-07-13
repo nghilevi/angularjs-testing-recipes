@@ -27,12 +27,12 @@ describe('Chap 6: Using Spies to Test Events', function () {
       expect(scope.$broadcast).toHaveBeenCalled();
     });
 
-    xit('should call $broadcast with correct event name and emcee', function () {
+    it('should call $broadcast with correct event name and emcee', function () {
       scope.showWuEmcee(wuTangClan[0]);
       expect(scope.$broadcast).toHaveBeenCalledWith('showWuEmcee',wuTangClan[0]);
     });
 
-    xit('should call $broadcast with specific argument', function () {
+    it('should call $broadcast with specific argument', function () {
       scope.showWuEmcee(wuTangClan[0]);
       expect(scope.$broadcast.calls.argsFor(0)).toContain(wuTangClan[0]);
     });

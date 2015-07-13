@@ -5,15 +5,19 @@
  * Ref: http://odetocode.com/blogs/scott/archive/2013/06/11/angularjs-tests-with-an-http-mock.aspx
  */
 describe('Chap 8: Service and Factory Testing with Mocks and Spies', function () {
-  var res,resData = ['kamanchi-sly','el-eye','rola'];
-  beforeEach(module('chapter8'));
+  var $httpBackend,emcees,url,httpMock,res,resData = ['kamanchi-sly','el-eye','rola'];
+  beforeEach(module('chapter8', function ($provide) {
+    httpMock = jasmine.createSpyObj("$http2",["get","post"]); //first/name parameter
+    $provide.value("$http2",httpMock)
+  }));
+  beforeEach(inject(function (_emcees_) {
+    emcees=_emcees_; //emcees = $injector.get('emcees');
+    url = '/emcees/uk';
+  }));
 
   describe('Testing HTTP GET requests using $httpBackend', function () {
-    var emcees,$httpBackend,url;
-    beforeEach(inject(function ($injector) {
-      emcees = $injector.get('emcees');
-      $httpBackend = $injector.get('$httpBackend');
-      url = '/emcees/uk';
+    beforeEach(inject(function (_$httpBackend_) {
+      $httpBackend =_$httpBackend_;
     }));
 
     afterEach(function () { //y?
@@ -50,11 +54,9 @@ describe('Chap 8: Service and Factory Testing with Mocks and Spies', function ()
   });
 
   describe('Testing HTTP POST requests using $httpBackend', function () {
-    var emcees,$httpBackend,url,emcee = {'name': 'ids'};
-    beforeEach(inject(function ($injector) {
-      emcees = $injector.get('emcees');
-      $httpBackend = $injector.get('$httpBackend');
-      url = '/emcees/uk';
+    var emcee = {'name': 'ids'};
+    beforeEach(inject(function (_$httpBackend_) {
+      $httpBackend =_$httpBackend_;
     }));
     it('should make a POST request', function () {
       //$httpBackend.whenPOST(url,emcee).respond(201, ''); //incorrect when later call emcees.addUKEmcee();
@@ -64,27 +66,6 @@ describe('Chap 8: Service and Factory Testing with Mocks and Spies', function ()
       $httpBackend.flush();
     });
   });
-  
-  describe('Using spies to test HTTP GET requests', function () {
 
-    var emcees,httpMock,url,emcee = {'name': 'alkaline'};
-    beforeEach(module(function ($provide) {
-      httpMock = jasmine.createSpyObj("$http",["get","post"]); //first/name parameter
-      //console.log("httpMock",httpMock)
-      $provide.value("$http",httpMock)
-    }))
-    beforeEach(inject(function ($injector) {
-      emcees = $injector.get('emcees');
-      url = '/emcees/uk'
-    }))
-    it('should make a GET request', function () {
-      emcees.getUKEmcees()
-      expect(httpMock.get).toHaveBeenCalled()
-    });
-    it('should make a POST request', function () {
-      emcees.addUKEmcee("bla")
-      expect(httpMock.post).toHaveBeenCalledWith(url,"bla")
-    });
-  })
 })
 
