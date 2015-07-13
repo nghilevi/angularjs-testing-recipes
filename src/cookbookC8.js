@@ -27,5 +27,9 @@ angular.module('chapter8', [])
         return $http.get('/emcees/uk/' + id)
       }
     };
+  })
+  .constant('MESSAGES', {
+    'errors': {
+      'ukemcees': 'There was an error loading emcees based in good old blighty.'
+    }
   });
-

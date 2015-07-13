@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="afecc1f1-7763-4ac6-a9a0-d9b8c7a8413a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cookbookC8.js" afterPath="$PROJECT_DIR$/src/cookbookC8.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/cookbookSpecC8MockHelpers.js" afterPath="$PROJECT_DIR$/test/cookbookSpecC8MockHelpers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/cookbookSpecC8.js" afterPath="$PROJECT_DIR$/test/cookbookSpecC8.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="basic_example.iws" />
@@ -29,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/src/cookbookC8.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
               <folding>
                 <element signature="e#0#40#0" expanded="false" />
               </folding>
@@ -37,21 +37,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cookbookSpecC8.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cookbookSpecC8.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/cookbookSpecC8.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="86" selection-start-line="11" selection-start-column="86" selection-end-line="11" selection-end-column="86" />
+            <state vertical-scroll-proportion="1.1392405">
+              <caret line="78" column="53" selection-start-line="78" selection-start-column="53" selection-end-line="78" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cookbookSpecC8MockHelpers.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cookbookSpecC8MockHelpers.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/cookbookSpecC8MockHelpers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.3984963">
-              <caret line="60" column="24" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="43" column="43" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="43" />
               <folding>
                 <element signature="e#0#40#0" expanded="false" />
               </folding>
@@ -93,9 +93,9 @@
         <option value="$PROJECT_DIR$/src/cookbookC7.js" />
         <option value="$PROJECT_DIR$/test/mockData.js" />
         <option value="$PROJECT_DIR$/test/cookbookSpecC6.js" />
-        <option value="$PROJECT_DIR$/test/cookbookSpecC8.js" />
         <option value="$PROJECT_DIR$/test/cookbookSpecC8MockHelpers.js" />
         <option value="$PROJECT_DIR$/src/cookbookC8.js" />
+        <option value="$PROJECT_DIR$/test/cookbookSpecC8.js" />
       </list>
     </option>
   </component>
@@ -269,7 +269,7 @@
     <frame x="1411" y="24" width="973" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.56463593" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3729569" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24947369" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -549,18 +549,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/cookbookSpecC8.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="86" selection-start-line="11" selection-start-column="86" selection-end-line="11" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cookbookC8.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
           <folding>
             <element signature="e#0#40#0" expanded="false" />
           </folding>
@@ -569,11 +561,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/cookbookSpecC8MockHelpers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3984963">
-          <caret line="60" column="24" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="43" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="43" />
           <folding>
             <element signature="e#0#40#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/cookbookSpecC8.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1392405">
+          <caret line="78" column="53" selection-start-line="78" selection-start-column="53" selection-end-line="78" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
