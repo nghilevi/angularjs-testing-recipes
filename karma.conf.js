@@ -18,7 +18,8 @@ module.exports = function(config) {
       "lib/angular/angular.js",
       "lib/angular/angular-mocks.js",
       "src/**/*.js",
-      "test/**/*.js"
+      "test/**/*.js",
+      "src/**/*.html"
     ],
 
 
@@ -30,9 +31,14 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      '**/*.html': ['ng-html2js']
     },
 
-
+    ngHtml2JsPreprocessor: {
+      // strip this from the file path
+      stripPrefix: 'src/',
+      moduleName: 'chapter5Templates'
+    },
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
