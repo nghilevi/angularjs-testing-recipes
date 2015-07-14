@@ -1,0 +1,33 @@
+{
+  "name": "basic_example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "karma.conf.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.12.37",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-jasmine": "^0.3.6"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-connect": "^0.10.1",
+    "grunt-karma": "^0.11.2",
+    "grunt-protractor-runner": "^2.0.0",
+    "grunt-protractor-webdriver": "^0.2.0",
+    "karma": "^0.12.37",
+    "karma-coverage": "^0.4.2",
+    "load-grunt-tasks": "^3.2.0",
+    "protractor": "^2.1.0",
+    "karma-ng-html2js-preprocessor": "~0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
