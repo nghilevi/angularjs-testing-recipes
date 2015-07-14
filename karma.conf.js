@@ -38,7 +38,7 @@ module.exports = function(config) {
 
     ngHtml2JsPreprocessor: {
       // strip this from the file path
-      stripPrefix: 'src/',
+      stripPrefix: 'src/directives/',
       moduleName: 'chapter5Templates'
     },
     // test results reporter to use

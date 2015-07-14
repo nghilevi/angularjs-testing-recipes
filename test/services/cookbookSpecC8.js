@@ -78,6 +78,22 @@ describe('Chap 8: Service and Factory Testing with Mocks and Spies', function ()
       var message = 'There was an error loading emcees based in good old blighty.';
       expect(MESSAGES.errors.ukemcees).toBe(message);
     });
+
+    it('should add to git', function () {
+
+    });
   })
 })
 
+/*
+
+The expectation in the above code is registered with the expectGET method.
+
+flush()
+  . will fail the test if there is no expect calls / outstanding expectations.
+  .. throw an exception if the specific configuration of any of the expect configurations are not met
+  . data to arrive in the model
+  . respond to all requests with the programmed responses.
+  . all the configurations are resolved giving us synchronous control over the asynchronous $http.get function in the code under test.
+
+ */
