@@ -67,9 +67,6 @@ describe('Chap 5: Testing User Interaction and Directives', function () {
       expect(list.eq(0).text()).toEqual('China Doll');
     }));
 
-    it('should display the correct breaker name', function($compile) {
-      $compile(element)(scope);
-    });
   })
 
   describe("Scope changes based on user input", function () {
@@ -124,18 +121,14 @@ describe('Chap 5: Testing User Interaction and Directives', function () {
   describe("Class changes based on window properties", function () {
     var testClassName = 'popup';
     beforeEach(inject(function ($compile) {
+      $window.name = testClassName;
       element = angular.element("<deejay></deejay>")
       $compile(element)(scope);
       scope.$digest();
     }));
     it('should have specific popup class if window name contains popup', function () {
-      $window.name = testClassName;
       var divClass = element.find('div').attr('class');
-
-      //TODO dont know why, just the way it is
       expect(scope.isPopup).toBeTruthy(); //important for it to work
-      scope.$digest();
-
       expect(divClass).toContain(testClassName);
     });
 
