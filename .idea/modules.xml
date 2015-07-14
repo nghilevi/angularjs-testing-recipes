@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/angularjs-testing-recipes.iml" filepath="$PROJECT_DIR$/.idea/angularjs-testing-recipes.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../AngularJS Testing Cookbook/angularjs-testing-cookbook/.idea/basic_example.iml" filepath="$PROJECT_DIR$/../AngularJS Testing Cookbook/angularjs-testing-cookbook/.idea/basic_example.iml" />
-    </modules>
-  </component>
-</project>
