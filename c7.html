@@ -1,0 +1,14 @@
+<script	src="lib/angular/angular.js"></script>
+
+<script	src="src/c7/filters.js"></script>
+<script	src="src/c7/stopWatch.js"></script>
+
+<body ng-app="product">
+  <div stop-watch ng-model="timer">
+    <span>{{timer.current | secondsToTime}}</span>
+    <button ng-click="onStartTimer()">{{!timer.running && 'Start' || 'Stop'}}</button>
+    <button ng-click="onResetTimer()">Reset</button>
+  </div>
+</body>
+
+</html>

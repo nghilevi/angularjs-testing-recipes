@@ -1,7 +1,7 @@
 /**
  * Created by nghi on 17.7.2015.
  */
-describe('favourite rapper', function () {
+xdescribe('favourite rapper', function () {
   it('should bind to input', function () {
     browser.get('');
     var emceeInput = element(by.model('emcee'));
