@@ -27,6 +27,8 @@ module.exports = function(config) {
 
     // list of files to exclude
     exclude: [
+      "src/e2e/**/*.js",
+      "test/e2e/**/*.js"
     ],
 
 

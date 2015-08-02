@@ -1,6 +1,6 @@
 //Remember to instlal karma-ng-html2js-preprocessor to make it works
 
-describe('Chap 5: Testing User Interaction and Directives', function () {
+xdescribe('Chap 5: Testing User Interaction and Directives', function () {
   var element, scope,$window;
   var breakers = [{
     name: 'China Doll'

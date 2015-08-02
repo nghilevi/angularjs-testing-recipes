@@ -1,4 +1,4 @@
-describe('Chap 6: Using Spies to Test Events', function () {
+xdescribe('Chap 6: Using Spies to Test Events', function () {
   var scope,homeCtrl,element;
   var wuTangClan = ['RZA', 'GZA', 'Method Man', 'Raekwon', 'Ghostface Killah', 'Inspectah Deck', 'U-God', 'MastaKilla', 'Cappadonna', 'ODB'];
 
