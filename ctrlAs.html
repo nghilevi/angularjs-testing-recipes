@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="lib/angular/angular.js"></script>
+<script src="src/ctrlAs.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body ng-app="ctrlAs">
+  <div ng-controller="RoomCtrl as room">
+    <button class="button" ng-click="room.openDoor()">{{room.buttonTitle}}</button>
+  </div>
+</body>
+</html>
